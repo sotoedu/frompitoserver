@@ -20,6 +20,21 @@ unzip c:\workspace\cmder
 
 https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.8-signed.msi
 
+[Custom] 
+
+C:\MongoDB\
+
+Install MongoDB Compass 체크박스를 언체크
+
+[내컴퓨터] 우클릭 -> [고급시스템설정] -> [환경변수(N)]
+C:\MongoDB\Server\4.2\bin 
+
+폴더 생성
+C:\data\db\
+
+데몬 실행
+cmder > mognod 
+
 5 Robo mongo
 
 https://download.studio3t.com/robomongo/windows/robo3t-1.3.1-windows-x86_64-7419c406.exe
