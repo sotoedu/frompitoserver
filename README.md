@@ -26,7 +26,8 @@ C:\MongoDB\
 
 Install MongoDB Compass 체크박스를 언체크
 
-[내컴퓨터] 우클릭 -> [고급시스템설정] -> [환경변수(N)]
+[내컴퓨터] 우클릭 [속성 ] -> [고급시스템설정] -> [환경변수(N)] -> [시스템 변수] --> [path] --> 추가
+
 C:\MongoDB\Server\4.2\bin 
 
 폴더 생성
@@ -39,9 +40,9 @@ cmder > mognod
 
 https://download.studio3t.com/robomongo/windows/robo3t-1.3.1-windows-x86_64-7419c406.exe
 
-6 pip install Flask
+6 git clone 
 
-7 pip install py
+7 cd 
 
 
 
