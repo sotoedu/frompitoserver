@@ -12,6 +12,9 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
+      let drawLineInterval;
+      let drawLineChartInterval;
+
       function drawLine() {
 
         $.ajax({
@@ -50,6 +53,7 @@
 
             //then draw the chart
             chart.draw(data, google.charts.Line.convertOptions(options));
+            drawLineInterval = setTimeout(drawLine, 3000)
           },
           error: function(xhr) {
             //Do Something to handle error
@@ -95,6 +99,8 @@
 
             //then draw the chart
             chart.draw(data, options);
+
+            drawLineChartInterval = setTimeout(drawLineChart, 3000)
           },
           error: function(xhr) {
             //Do Something to handle error
@@ -105,16 +111,26 @@
 
       $('#drawLine').on('click', function() {
         console.log("start");
+        clearTimeout(drawLineChartInterval);
         google.charts.load('current', {'packages':['line']});
         google.charts.setOnLoadCallback(drawLine);
       });
 
       $('#drawLineChart').on('click', function() {
         console.log("stop");
+        clearTimeout(drawLineInterval);
         google.charts.load('current', {
           'packages': ['corechart']
         });
         google.charts.setOnLoadCallback(drawLineChart);
+      });
+
+      $('#drawStop').on('click', function() {
+        console.log("stop");
+        clearTimeout(drawLineInterval);
+        clearTimeout(drawLineChartInterval);
+
+
       });
 
 
@@ -135,13 +151,13 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="deactive">
-            <a href="/">Home </a>
+            <a href="/"> Home </a>
           </li>
           <li class="deactive">
-            <a href="/showlist">Table </a>
+            <a href="/showlist"> Table </a>
           </li>
           <li class="active">
-            <a href="/graph">Graph </a>
+            <a href="/graph"> Chart </a>
           </li>
         </ul>
       </div>
@@ -157,6 +173,7 @@
 
     <button id="drawLine">drawLine</button>
     <button id="drawLineChart">drawLineChart</button>
+    <button id="drawStop">Stop</button>
 
     <div style="margin: 10px 0 0 10px;width: 1000px">
       <h3>현재 측정된 값을 그래프로 보여 줍니다.</h3>
@@ -168,14 +185,12 @@
   <br>
   <br>
   <div id="place_for_tableplace"></div>
-
-
-
-
-
-
-
-
 </body>
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white"><b>Copyright &copy; Since 2015. Sunstar</b></p>
+  </div>
+</footer>
 
 </html>
