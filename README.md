@@ -40,9 +40,9 @@ cmder > mognod
 
 https://download.studio3t.com/robomongo/windows/robo3t-1.3.1-windows-x86_64-7419c406.exe
 
-6 git clone 
+6 git clone https://github.com/sotoedu/frompitoserver.git
 
-7 cd 
+7 cd frompitoserver 
 
 8 pip install -r requirements.txt
 
