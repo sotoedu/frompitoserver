@@ -2,12 +2,15 @@ from flask import Flask, url_for , request , json , Response , jsonify, render_t
 import logging
 from datetime import datetime
 import pymongo
+from flask_cors import CORS
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["smartfarmDB"]
 mycol = mydb["mysensor"]
 
 app = Flask(__name__)
+CORS(app)
+
 file_handler = logging.FileHandler('app.log')
 app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)

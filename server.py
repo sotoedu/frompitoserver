@@ -1,6 +1,10 @@
 from flask import Flask, url_for , request , json , Response , jsonify, render_template
 import logging
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
+
 file_handler = logging.FileHandler('app.log')
 app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
