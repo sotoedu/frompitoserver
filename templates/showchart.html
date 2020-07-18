@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>제주 서귀포 남원 스마트팜 대시보드</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      function drawLine() {
+
+        $.ajax({
+          url: "http://localhost:3000/graphlist",
+          type: "get",
+          success: function(response) {
+            console.log("Done");
+            // create the data table object
+            var data = new google.visualization.DataTable();
+            // define the data table's columns
+            // data.addColumn('datetime', 'Time');
+            data.addColumn('number', 'Time');
+            data.addColumn('number', 'Temperature');
+            data.addColumn('number', 'Humidity');
+            // data.addColumn('number', 'Pressure');
+            // add data to the data table
+
+            console.log("res:" , response)
+
+            // isoDate = response.date;   // t is correct key?
+            // var isoString = isoDate.toISOString()
+
+            data.addRows(eval(response));
+            // data.addRows([2000, 10],[2100, 50])
+            // Instantiate and draw our chart, passing in some options.
+            chart = new google.charts.Line(document.getElementById('view_chart'));
+
+            var options = {
+                chart: {
+                  title: 'Box Office Earnings in First Two Weeks of Opening',
+                  subtitle: 'in millions of dollars (USD)'
+                },
+                width: 900,
+                height: 500
+             };
+
+            //then draw the chart
+            chart.draw(data, google.charts.Line.convertOptions(options));
+          },
+          error: function(xhr) {
+            //Do Something to handle error
+          }
+        });
+
+      }
+
+
+
+      function drawLineChart() {
+
+        $.ajax({
+          url: "http://localhost:3000/graphlist",
+          type: "get",
+          success: function(response) {
+            console.log("Done");
+            // create the data table object
+            var data = new google.visualization.DataTable();
+            // define the data table's columns
+            // data.addColumn('datetime', 'Time');
+            data.addColumn('number', 'Time');
+            data.addColumn('number', 'Temperature');
+            data.addColumn('number', 'Humidity');
+            // data.addColumn('number', 'Pressure');
+            // add data to the data table
+
+            console.log("res:" , response)
+
+            // isoDate = response.date;   // t is correct key?
+            // var isoString = isoDate.toISOString()
+
+            data.addRows(eval(response));
+            // data.addRows([2000, 10],[2100, 50])
+            // Instantiate and draw our chart, passing in some options.
+            chart = new google.visualization.LineChart(document.getElementById('view_chart'));
+
+            var options = {
+              title: 'Company Performance',
+              curveType: 'function',
+              legend: { position: 'bottom' }
+          };
+
+            //then draw the chart
+            chart.draw(data, options);
+          },
+          error: function(xhr) {
+            //Do Something to handle error
+          }
+        });
+
+      }
+
+      $('#drawLine').on('click', function() {
+        console.log("start");
+        google.charts.load('current', {'packages':['line']});
+        google.charts.setOnLoadCallback(drawLine);
+      });
+
+      $('#drawLineChart').on('click', function() {
+        console.log("stop");
+        google.charts.load('current', {
+          'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawLineChart);
+      });
+
+
+
+
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        </button>
+        <a class="navbar-brand" href="/">Sunstar</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="deactive">
+            <a href="/">Home </a>
+          </li>
+          <li class="deactive">
+            <a href="/showlist">Table </a>
+          </li>
+          <li class="active">
+            <a href="/graph">Graph </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <div class="container " role="main">
+    <h2><strong> 제주 서귀포시 남원은 스마트팜 대시보드 </strong></h2>
+
+    <button id="drawLine">drawLine</button>
+    <button id="drawLineChart">drawLineChart</button>
+
+    <div style="margin: 10px 0 0 10px;width: 1000px">
+      <h3>현재 측정된 값을 그래프로 보여 줍니다.</h3>
+
+      <div id="view_chart" style="width: 900px; height: 500px;"></div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div id="place_for_tableplace"></div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

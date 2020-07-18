@@ -1,0 +1,1448 @@
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "server.py", line 10, in index
+    return render_template('index.html')
+NameError: name 'render_template' is not defined
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 33, in api_message
+    saveDB = mycol.insert_many(json.dumps(request.json))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 33, in api_message
+    saveDB = mycol.insert_many(json.dumps(request.json))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 33, in api_message
+    saveDB = mycol.insert_many(json.dumps(request.json))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_many(dblist)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_many(dblist)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_many(dblist)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_many(dblist)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_one(dblist).inserted_id
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 689, in insert_one
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_one(dblist).inserted_id
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 689, in insert_one
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_one(dblist).inserted_id
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 689, in insert_one
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 35, in api_message
+    saveDB = mycol.insert_many(dblist)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in insert_many
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 757, in <listcomp>
+    blk.ops = [doc for doc in gen()]
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\collection.py", line 748, in gen
+    common.validate_is_document_type("document", document)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\pymongo\common.py", line 480, in validate_is_document_type
+    raise TypeError("%s must be an instance of dict, bson.son.SON, "
+TypeError: document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 38, in api_message
+    print(saveDB.inserted_id)
+AttributeError: 'ObjectId' object has no attribute 'inserted_id'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 38, in api_message
+    print(saveDB.inserted_id)
+AttributeError: 'ObjectId' object has no attribute 'inserted_id'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 45, in api_message
+    return "JSON Message: " + json.dumps(request.json)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 45, in api_message
+    return "JSON Message: " + json.dumps(request.json)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\json\__init__.py", line 211, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\json\__init__.py", line 100, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ObjectId is not JSON serializable
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 39, in api_message
+    print(saveDB.sensor)
+AttributeError: 'InsertOneResult' object has no attribute 'sensor'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 39, in api_message
+    print(saveDB.inserted_ids)
+AttributeError: 'InsertOneResult' object has no attribute 'inserted_ids'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 39, in api_message
+    print(saveDB.inserted_sensor)
+AttributeError: 'InsertOneResult' object has no attribute 'inserted_sensor'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 39, in api_message
+    print(saveDB.inserted_sensor)
+AttributeError: 'InsertOneResult' object has no attribute 'inserted_sensor'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 37, in api_message
+    raw.update(date)
+AttributeError: 'str' object has no attribute 'update'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "dbserver.py", line 37, in api_message
+    value.update(raw)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Exception on /showlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "tableserver.py", line 23, in api_showlist
+    return render_template('table.html', emp_list = emp_list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\table.html", line 22, in template
+    {% emp in emp_list}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'emp'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 31, in api_graph
+    return render_template('showchart.html', data=emp_list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+jinja2.exceptions.UndefinedError: 'pymongo.cursor.Cursor object' has no attribute 'items'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 31, in api_graph
+    return render_template('showchart.html', data=emp_list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+jinja2.exceptions.UndefinedError: 'pymongo.cursor.Cursor object' has no attribute 'items'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 31, in api_graph
+    return render_template('showchart.html', data=emp_list)
+NameError: name 'emp_list' is not defined
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 31, in api_graph
+    return render_template('showchart.html', data=data)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+jinja2.exceptions.UndefinedError: 'pymongo.cursor.Cursor object' has no attribute 'items'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 26, in api_graph
+    value = mycol.find({},{_id:0, sensor: 1, value: 1, date: 1}).sort('date', -1)
+NameError: name '_id' is not defined
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 30, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 30, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 30, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 30, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 32, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 32, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 32, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 32, in api_graph
+    data.update(value)
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 33, in api_graph
+    data = dumps(result)
+NameError: name 'dumps' is not defined
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graph
+    return render_template('showchart.html', data=data)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'items'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graph
+    return render_template('showchart.html', data=data)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'items'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 32, in api_graph
+    data.append(value)
+AttributeError: 'dict' object has no attribute 'append'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 41, in api_graph
+    print(data)
+NameError: name 'data' is not defined
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 42, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 68, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 42, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 68, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 42, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 70, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 42, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 64, in template
+    {{ list }}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 94, in api_message
+    dateTime = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 94, in api_message
+    dateTime = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 94, in api_message
+    dateTime = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 94, in api_message
+    dateTime = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Exception on /messages [POST]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 94, in api_message
+    dateTime = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 43, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 75, in template
+    //     <td> {{ emp['sensor'] }} </td>
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 43, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 75, in template
+    //     <td> {{ emp['sensor'] }} </td>
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 43, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 75, in template
+    //     <td> {{ emp['sensor'] }} </td>
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 43, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    {% for key, value in data.items() %}
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+Exception on /graph [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 43, in api_graph
+    return render_template('showchart.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\workspace\pymongo\templates\showchart.html", line 19, in top-level template code
+    // {% for key, value in data.items() %}
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 49, in api_graphlist
+    return render_template('showchartview.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: showchartview.html
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 49, in api_graphlist
+    return render_template('showchartview.html', list=list)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: showchartview.html
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graphlist
+    value_list = [int(item['date'])+10,int(item['value'])]
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graphlist
+    value_list = [int(item['date'])+10,int(item['value'])]
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graphlist
+    value_list = [int(item['date'])+10,int(item['value'])]
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 40, in api_graphlist
+    value_list = [int(item['date']),int(item['value'])]
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 42, in api_graphlist
+    value_list = [ISODate(item['date']),item['value']]
+NameError: name 'ISODate' is not defined
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 47, in api_graphlist
+    clean_json = re.compile('ISODate\(("[^"]+")\)').sub('\\1', json_str)
+TypeError: expected string or bytes-like object
+Exception on /graphlist [GET]
+Traceback (most recent call last):
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\soto\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "graphserver.py", line 47, in api_graphlist
+    count = count + 1
+UnboundLocalError: local variable 'count' referenced before assignment

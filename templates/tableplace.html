@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-striped">
+      <thead>
+      <tr>
+          <td><B>센서이름</B></td>
+          <td><B>값</B></td>
+          <td><B>저장시간</B></td>
+      </tr>
+      </thead>
+      <tbody>
+        {% for emp in emp_list %}
+      <tr>
+          <td> {{ emp['sensor'] }} </td>
+          <td> {{ emp['value'] }} </td>
+          <td> {{ emp['date'] }} </td>
+      </tr>
+      {% endfor %}
+      <tbody>
+  </table>
+  </div>
