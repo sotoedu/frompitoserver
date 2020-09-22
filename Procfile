@@ -1,1 +1,1 @@
-web: gunicorn prototype:app
+web: python server.py
